@@ -1,0 +1,43 @@
+{
+  "name": "react-region",
+  "version": "0.0.1",
+  "description": "React Region component",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jide/react-region.git"
+  },
+  "author": "Julien De Luca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jide/react-region/issues"
+  },
+  "homepage": "https://github.com/jide/react-region",
+  "scripts": {
+    "postinstall": "npm run build-lib",
+    "clean": "rimraf lib",
+    "build": "npm run clean && babel --stage 0 src -d lib",
+    "server-dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --colors --content-base demo",
+    "dev": "npm run server-dev",
+    "demo": "opener http://127.0.0.1:3000"
+  },
+  "dependencies": {
+    "react": "0.13.x"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-runtime": "^5.8.20",
+    "eslint": "1.3.1",
+    "eslint-config-defaults": "*",
+    "eslint-ecma-features": "*",
+    "eslint-plugin-filenames": "*",
+    "eslint-plugin-react": "*",
+    "opener": "^1.4.1",
+    "rimraf": "^2.4.3",
+    "webpack": "*",
+    "webpack-dev-server": "^1.10.0"
+  }
+}
