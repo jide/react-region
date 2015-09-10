@@ -14,7 +14,6 @@
   },
   "homepage": "https://github.com/jide/react-region",
   "scripts": {
-    "postinstall": "npm run build-lib",
     "clean": "rimraf lib",
     "build": "npm run clean && babel --stage 0 src -d lib",
     "server-dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --colors --content-base demo",

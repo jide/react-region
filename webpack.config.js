@@ -16,11 +16,6 @@ module.exports = {
       }
     }
   ],
-  output: {
-    path: path.resolve("./dist"),
-    filename: "react-region.min.js",
-    library: "react-region"
-  },
   resolve: {
     extensions: ["", ".js", ".jsx"]
   },
