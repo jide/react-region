@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react/addons';
+import React, { Component, PropTypes } from 'react';
 import shallowEqual from 'react/lib/shallowEqual';
 
 export default class Region extends Component {
