@@ -11,6 +11,7 @@ React Region component lets you mount components by passing plain objects to its
 import { makeRegion } from 'react-region';
 import Example from './Example';
 
+// Configure which components can be mounted in regions.
 const Region = makeRegion({
   Example
 });
