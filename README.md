@@ -1,10 +1,10 @@
 # React Region
 
 ## Description
-React Region component
+React Region component lets you mount components by passing plain objects to its `region` prop.
 
 ## Demo
-`npm start dev`
+`npm start dev` then visit http://127.0.0.1:3000
 
 ## Usage
 ````js

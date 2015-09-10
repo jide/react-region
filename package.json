@@ -18,8 +18,7 @@
     "clean": "rimraf lib",
     "build": "npm run clean && babel --stage 0 src -d lib",
     "server-dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --colors --content-base demo",
-    "dev": "npm run server-dev",
-    "demo": "opener http://127.0.0.1:3000"
+    "dev": "npm run server-dev"
   },
   "dependencies": {
     "react": "0.13.x"
@@ -35,7 +34,6 @@
     "eslint-ecma-features": "*",
     "eslint-plugin-filenames": "*",
     "eslint-plugin-react": "*",
-    "opener": "^1.4.1",
     "rimraf": "^2.4.3",
     "webpack": "*",
     "webpack-dev-server": "^1.10.0"
