@@ -2,19 +2,10 @@
 import React from 'react';
 import { makeRegion } from '../src/index';
 
-class Example extends React.Component {
-  render() {
-    return (
-      <div className={ this.props.className }>
-        <strong>This is a test component, it has props :</strong>
-        { Object.keys(this.props).map(i => <div>{ `${i}: ${this.props[i]}` }</div>) }
-      </div>
-    );
-  }
-}
+import Badge from './Badge';
 
 const Region = makeRegion({
-  Example
+  Badge
 });
 
 class App extends React.Component {
@@ -23,7 +14,7 @@ class App extends React.Component {
 
     this.state = {
       region: [{
-        type: 'Example',
+        type: 'Badge',
         props: {
           key: 'some-example',
           test: 'This is an example component',
@@ -36,7 +27,7 @@ class App extends React.Component {
   handleClick() {
     this.setState({
       region: [{
-        type: 'Example',
+        type: 'Badge',
         props: {
           key: 'some-example',
           test: 'This is an example component that has been updated',
@@ -51,7 +42,7 @@ class App extends React.Component {
       <div className='demo'>
         <button onClick={ ::this.handleClick }>Click me</button>
         <br/><br/>
-        <Region region={ this.state.region }/>
+        <Region className='test-region' id='region-id' region={ this.state.region }/>
       </div>
     );
   }
