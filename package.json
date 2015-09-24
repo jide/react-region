@@ -1,6 +1,6 @@
 {
   "name": "react-region",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React Region component",
   "main": "lib/index.js",
   "repository": {
