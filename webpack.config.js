@@ -6,6 +6,11 @@ var path = require("path");
 module.exports = {
   cache: true,
   entry: path.join(__dirname, "src/index.js"),
+	output: {
+		path: path.join(__dirname, "lib"),
+		filename: "bundle.js",
+		libraryTarget: "commonjs2"
+	},
   externals: [
     {
       "react": {
@@ -24,7 +29,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: [/node_modules/],
-        loader: "babel-loader?optional[]=runtime&stage=0"
+        loader: "babel-loader?stage=0"
       }
     ]
   },
@@ -39,7 +44,6 @@ module.exports = {
       // Signal production, so that webpack removes non-production code that
       // is in condtionals like: `if (process.env.NODE_ENV === "production")`
       "process.env.NODE_ENV": JSON.stringify("production")
-    }),
-    new webpack.SourceMapDevToolPlugin("[file].map")
+    })
   ]
 };

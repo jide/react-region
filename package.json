@@ -2,7 +2,7 @@
   "name": "react-region",
   "version": "0.0.6",
   "description": "React Region component",
-  "main": "lib/index.js",
+  "main": "lib/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jide/react-region.git"
@@ -15,12 +15,13 @@
   "homepage": "https://github.com/jide/react-region",
   "scripts": {
     "clean": "rimraf lib",
-    "build": "npm run clean && babel --stage 0 src -d lib",
+    "build": "./node_modules/webpack/bin/webpack.js -p",
     "server-dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --colors --content-base demo",
-    "dev": "npm run server-dev"
+    "start": "npm run server-dev"
   },
   "dependencies": {
-    "react": "0.13.x"
+    "react": "0.13.x",
+    "shallowequal": "^0.2.2"
   },
   "devDependencies": {
     "babel": "*",

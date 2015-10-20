@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import shallowEqual from 'react/lib/shallowEqual';
+import shallowEqual from 'shallowequal';
 
 export default class Region extends Component {
 
