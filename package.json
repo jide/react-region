@@ -1,6 +1,6 @@
 {
   "name": "react-region",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "React Region component",
   "main": "lib/bundle.js",
   "repository": {
@@ -20,7 +20,7 @@
     "start": "npm run server-dev"
   },
   "dependencies": {
-    "react": "0.13.x",
+    "react": "^0.13.x",
     "shallowequal": "^0.2.2"
   },
   "devDependencies": {
