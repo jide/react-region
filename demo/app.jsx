@@ -1,5 +1,6 @@
 /*global document:false*/
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { makeRegion } from '../src/index';
 
 import Badge from './Badge';
@@ -50,4 +51,4 @@ class App extends React.Component {
 
 const content = document.getElementById('content');
 
-React.render(<App/>, content);
+ReactDOM.render(<App/>, content);

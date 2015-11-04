@@ -12,14 +12,8 @@ module.exports = {
 		libraryTarget: "commonjs2"
 	},
   externals: [
-    {
-      "react": {
-        root: "React",
-        commonjs2: "react",
-        commonjs: "react",
-        amd: "react"
-      }
-    }
+    "react",
+    "shallowequal"
   ],
   resolve: {
     extensions: ["", ".js", ".jsx"]
