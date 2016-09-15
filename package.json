@@ -1,6 +1,6 @@
 {
   "name": "react-region",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "React Region component",
   "main": "lib/bundle.js",
   "repository": {
