@@ -20,7 +20,6 @@
     "start": "npm run server-dev"
   },
   "dependencies": {
-    "react": "^0.14.2",
     "shallowequal": "^0.2.2"
   },
   "devDependencies": {
@@ -34,10 +33,15 @@
     "eslint-ecma-features": "*",
     "eslint-plugin-filenames": "*",
     "eslint-plugin-react": "*",
+    "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "rimraf": "^2.4.3",
     "webpack": "*",
     "webpack-dev-server": "^1.10.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "keywords": [
     "react",
